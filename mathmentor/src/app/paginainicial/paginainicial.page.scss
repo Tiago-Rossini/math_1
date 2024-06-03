@@ -1,0 +1,64 @@
+ion-content{
+    --ion-background-color: #ffffff;
+  }
+
+.titulo{
+    font-size: 30px;
+    font-family: 'Patrick Hand', sans-serif;
+    text-align: center;
+}
+
+h2{
+    position: relative;
+    top: -10px; 
+    text-align: center;
+    color: #000000;
+    font-family: 'Patrick Hand', sans-serif;
+}
+
+h5{
+    font-family: 'Patrick Hand', sans-serif;
+    text-align: center;
+  }
+  
+  
+.entrar{
+    margin-top: 680px;
+    margin-left: 270px;
+    --background: #e57373;
+    position: absolute;
+    font-family: 'Patrick Hand', sans-serif;
+    
+}
+
+.imgMath{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.cardImg{
+    margin-top: 5px;
+    border: none;
+    box-shadow: none;
+}
+
+.cardimg2{
+    border: none;
+    box-shadow: none;
+    position: relative;
+    top: -25px; 
+    margin-left: 5px;
+    background-color: #ffffff;
+}
+
+.imgMath2{
+    width: 190px;
+    height: 170px;
+    position: relative;
+    top: -5px; 
+    margin-left: 5px;
+
+}

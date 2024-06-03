@@ -1,0 +1,101 @@
+ion-content{
+  --ion-background-color: #ffffff;
+}
+
+.card1{
+  --ion-background-color: #ffffff;
+  background-color: #ffffff;
+  .botaoquest{
+    --background: #76b7f3;
+    color: #000000;
+  }
+
+  .option{
+    --background: #cacaca;
+    color:#000000;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px #76b7f3;
+  }
+  
+  .teste{
+    --ion-background-color: #ffffff;
+    background-color: #ffffff;
+    
+    .item-native {
+      --ion-background-color: #ffffff !important;
+      background-color: #ffffff !important;
+
+    }
+
+  }
+
+  ion-list {
+    --ion-background-color: #ffffff;
+    background-color: #ffffff;
+  }
+}
+
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.containerImg {
+  display: flex;
+  justify-content: center;
+  .imgMath{
+    text-align: center;
+    margin: 0 auto;
+    width: 130px;
+    height: 140px;
+  }
+
+}
+
+h5{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.voltar{
+  margin-left: 270px;
+  font-family: 'Patrick Hand', sans-serif;
+  --background: #e57373;
+}
+
+.correct {
+  color: green; 
+  font-size: 18px;
+}
+
+.incorrect {
+  color: red; 
+  font-size: 18px;
+}
+
+.titleperg{
+  color: #000000;
+}

@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <ion-card-content class="containerImg">
+      <img class="imgMath" src="../../assets/logo4 - Copia (2).png">
+    </ion-card-content>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Fredoka+One&display=swap" rel="stylesheet">
+<ion-card *ngIf="perguntaAtual < quiz.length" class="card1">
+
+  <ion-card-header>
+    <ion-card-title class="titleperg"> 
+      {{ quiz[perguntaAtual].question}}
+    </ion-card-title>
+  </ion-card-header>
+<ion-list *ngFor="let option of quiz[perguntaAtual].options; index as i" class="teste">
+  <ion-item class="teste">
+    <ion-button expand="full" (click)="answer(i)" class="option">
+      {{ option }}
+    </ion-button>
+  </ion-item>
+</ion-list>
+</ion-card>
+<ion-card *ngIf="showAnswer" class="card1">
+  <ion-card-content [ngClass]="{'correct': correct, 'incorrect': !correct}">
+    {{ correct ? quiz[perguntaAtual].feedbackCorrect : quiz[perguntaAtual].feedbackIncorrect }}
+  </ion-card-content>
+  <ion-button expand="full" (click)="nextQuestion()" class="botaoquest">
+    Próxima questão
+  </ion-button>
+</ion-card>
+
+<ion-card *ngIf="perguntaAtual >= quiz.length" class="card1">
+  <ion-card-header>
+    <ion-card-title>
+      Quiz foi concluído
+    </ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p> {{ score }} de {{ quiz.length }} </p>
+  </ion-card-content>
+</ion-card>
+
+  <ion-button class="voltar" [routerLink]="['/paginainicial']">Voltar</ion-button>
+
+
+<h5 style="font-family: Arial, Helvetica, sans-serif;"> by Leleu™</h5> 
+</ion-content>
